@@ -1,0 +1,108 @@
+*{
+   box-sizing: border-box;
+   background-color: #000;
+   padding: 0px;
+}
+
+header{
+    height: 20vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+ul li{
+    display: inline-block;
+
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease; 
+}
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+ul li .active a{
+    background-color: #fff;
+    color: #000;
+}
+
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+}
+
+.gallery{
+    border: 1px solid #ccc;
+}
+
+.gallery img{
+    width: 100%;
+    height: auto;
+}
+.responsive{
+    padding: 0 6px;
+    float: left;
+    width: 25%;
+
+}
+.responsive .gallery{
+    overflow: hidden;
+    transition: 0.5s;
+}
+.responsive .gallery:hover{
+    z-index: 1;
+    transform:scale(1.25);
+    box-shadow: 0 25px 40px rgba(0, 0, 0,0.5);
+}
+
+
+@media only screen and (max-width:700px){
+    .responsive{
+        width: 50%;
+        margin: 6px 0;
+    }
+}
+@media only screen and (max-width:500px){
+    .responsive{
+        width: 100%;
+    }
+}
+
+.gotop{
+    float: right;
+    list-style-type: none;
+    margin-bottom: 25px;
+    position: relative;
+    right: 50%;
+}
+
+.gotop li{
+    display: inline-block;
+
+}
+.gotop li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease; 
+}
+.gotop li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+.gotop li .active2 a{
+    background-color: #fff;
+    color: #000;
+}
